@@ -7,8 +7,8 @@ sys.setdefaultencoding( "utf-8" )
 import pynlpir
 
 pynlpir.open()
-s = '聊天机器人到底该怎么做呢？'
-segments = pynlpir.segment(s, pos_names='all')
+s = '海洋是如何，形成的'
+segments = pynlpir.segment(s, pos_names='all', pos_english=False)
 print segments
 for segment in segments:
     print segment[0], '\t', segment[1]
